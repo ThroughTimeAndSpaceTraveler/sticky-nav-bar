@@ -1,0 +1,67 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+img {
+    max-width: 100%;
+    align-self: flex-start;
+    vertical-align: middle;
+
+}
+
+
+.fixed-nav nav{
+    position: fixed;
+    box-shadow: 0 5px rgba(0, 0, 0, .1);
+    top: 0;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: #000;
+    color: #fff;
+}
+
+li.logo {
+    max-width: 0;
+    overflow: hidden;
+    background-color: #fff;
+    color: #000;
+    transition: all .5s;
+}
+
+.fixed-nav li.logo {
+    max-width: 100%;
+    overflow:visible;
+}
+
+.nav-item {
+    width: 100%;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 3em 0;
+}
+
+.text {
+    padding-bottom: 2em;
+}
